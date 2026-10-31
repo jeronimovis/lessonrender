@@ -66,8 +66,8 @@ h1{font-size:clamp(40px,6.4vw,74px);line-height:.98;letter-spacing:-.025em;margi
 .mock .score{font:600 13px var(--ui);color:var(--ok);margin:12px 0 0}
 .mock-cap{font:13px var(--ui);color:var(--muted);text-align:center;margin:14px 0 0}
 
-/* three choices */
-.choices{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:16px;margin:-34px 0 0;position:relative}
+/* choices */
+.choices{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:16px;margin:-34px 0 0;position:relative}
 .choice{display:block;background:var(--paper);border:1px solid var(--slab-deep);border-top:4px solid var(--ink);border-radius:0 0 6px 6px;padding:20px 22px 22px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
 .choice:hover{border-color:var(--accent);transform:translateY(-2px)}
 .choice .num{font-size:44px;line-height:1;font-weight:300;color:var(--slab-deep);display:block;margin-bottom:8px}
@@ -75,7 +75,8 @@ h1{font-size:clamp(40px,6.4vw,74px);line-height:.98;letter-spacing:-.025em;margi
 .choice span.d{display:block;font:15px/1.5 var(--ui);color:var(--muted)}
 .choice span.go{display:inline-block;font:600 15px var(--ui);color:var(--accent);margin-top:12px}
 @media (prefers-reduced-motion:reduce){.choice{transition:none}.choice:hover{transform:none}}
-@media (max-width:860px){.choices{grid-template-columns:1fr;margin-top:28px}}
+@media (max-width:980px){.choices{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.choices{grid-template-columns:1fr;margin-top:28px}}
 
 /* features */
 .feats{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:24px;margin:56px 0 0;padding:0;list-style:none;font:15px/1.5 var(--ui);color:var(--muted)}
@@ -158,7 +159,7 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
   <a class="brand" href="#" aria-label="LessonMark, back to the top">
     <svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="14" fill="var(--slab)"/><rect x="18" y="18" width="53" height="53" rx="4" fill="var(--ink)"/><path d="M55.6 60.4H55.2L52 58.9H37.9V57H54.7L51.3 57.9L57.4 49L58.2 49.2ZM42.6 30.3V58.9H30.8V58.1L34.1 57.2V30.3L30.8 29.4V28.6H45.9V29.4Z" fill="var(--slab)"/><path d="M82.2 21.2H102M82.2 52.2H102M82.2 67.8H102M21.2 83.2H102M21.2 98.8H74" stroke="var(--ink)" stroke-width="6.5" stroke-linecap="round"/><path d="M82.2 36.8H102" stroke="var(--accent)" stroke-width="6.5" stroke-linecap="round"/></svg>
     Lesson<span>Mark</span></a>
-  <nav aria-label="Sections"><a href="#youtube">From YouTube</a><a href="#own">Your own media</a><a href="#change">Change it</a><a href="#more">More</a></nav>
+  <nav aria-label="Sections"><a href="#youtube">From YouTube</a><a href="#materials">Flash kit</a><a href="#own">Your own media</a><a href="#change">Change it</a><a href="#more">More</a></nav>
   <button type="button" class="tool" id="theme" aria-label="Switch between light and dark" title="Light or dark">
     <svg class="ic-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
     <svg class="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -189,8 +190,9 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
 
   <nav class="choices" aria-label="Start here">
     <a class="choice" href="#youtube"><span class="num">1</span><b>Make a lesson from a YouTube video.</b><span class="d">Everything happens online. Free AI assistants write the exercises; you check them and teach.</span><span class="go">Show me the steps ↓</span></a>
-    <a class="choice" href="#own"><span class="num">2</span><b>Use your own audio or video.</b><span class="d">Download the starter kit, replace the recordings with yours and open the lesson.</span><span class="go">Show me the steps ↓</span></a>
-    <a class="choice" href="lessons/house-tour/"><span class="num">3</span><b>See a finished lesson.</b><span class="d">A 45-minute C1 lesson about a house on the Murray River. Try the exercises.</span><span class="go">Open the lesson →</span></a>
+    <a class="choice" href="#materials"><span class="num">2</span><b>Make a lesson from your own materials.</b><span class="d">A super fast lesson from any material. Give an AI your texts, photos or links with the flash kit.</span><span class="go">Show me the steps ↓</span></a>
+    <a class="choice" href="#own"><span class="num">3</span><b>Use your own audio or video.</b><span class="d">Download the starter kit, replace the recordings with yours and open the lesson.</span><span class="go">Show me the steps ↓</span></a>
+    <a class="choice" href="lessons/house-tour/"><span class="num">4</span><b>See a finished lesson.</b><span class="d">A 45-minute C1 lesson about a house on the Murray River. Try the exercises.</span><span class="go">Open the lesson →</span></a>
   </nav>
 
   <ul class="feats">
@@ -248,9 +250,37 @@ level: B1
     </ol>
   </section>
 
+  <!-- ===== Flash kit: lesson from your own materials ===== -->
+  <section id="materials">
+    <h2><small>Choice 2 · Flash kit</small>Make a lesson from your own materials.</h2>
+    <p class="lead">A super fast lesson from any material. Give an AI your article, notes, photos, links or transcript, and it builds the whole lesson in one step.</p>
+    <ol class="steps">
+      <li class="step"><div>
+        <h3>Download the flash kit</h3>
+        <p>A small zip with three files: the instructions for the AI, <code>SKILL.md</code>, and a link to LessonMark online. You can also download the two AI files one by one in the next step.</p>
+        <p><a class="btn" href="assets/starter-kit-flash.zip" download>Download the flash kit (.zip)</a></p>
+      </div></li>
+      <li class="step"><div>
+        <h3>Send it all to an AI</h3>
+        <p>Open <a href="https://chat.deepseek.com" target="_blank" rel="noopener">DeepSeek</a>, <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>, <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a> or <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a>. Attach <code>SKILL.md</code> and your materials. Open <code>4-lesson-from-your-materials.txt</code>, fill in your choices, copy the prompt and send it.</p>
+        <div class="files">
+          <a class="file" href="ai/4-lesson-from-your-materials.txt" download><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>4-lesson-from-your-materials.txt</a>
+          <a class="file" href="ai/SKILL.md" download><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>SKILL.md</a>
+        </div>
+        <p class="tip"><b>Using a video?</b> Paste a transcript with times, and the lesson plays exact clips. <a href="#youtube">Choice 1, step 1</a> shows how to get one.</p>
+      </div></li>
+      <li class="step"><div>
+        <h3>Open your lesson</h3>
+        <p>Copy the AI’s lesson, or download it, and paste or open it in LessonMark online.</p>
+        <p><a class="btn" href="online/">Open LessonMark online</a></p>
+        <p class="tip"><b>Lessons with your own images or recordings</b> work from a folder: save the lesson as <code>data.md</code> next to <code>index.html</code> and those files, as in <a href="#own">choice 3</a>. The AI lists the file names to use.</p>
+      </div></li>
+    </ol>
+  </section>
+
   <!-- ===== Path B ===== -->
   <section id="own">
-    <h2><small>Choice 2</small>Use your own audio or video.</h2>
+    <h2><small>Choice 3</small>Use your own audio or video.</h2>
     <p class="lead">For recordings of your own: a podcast extract, an interview, yourself. Everything stays on your computer.</p>
     <ol class="steps">
       <li class="step"><div>
@@ -319,6 +349,7 @@ level: B1
       <li><a href="assets/LessonMark-reference.html"><b>Reference</b><span>Every tag and option, with examples to copy.</span></a></li>
       <li><a href="https://github.com/jeronimovis/lessonmark/tree/main/ai" target="_blank" rel="noopener"><b>Instructions for AI</b><span>The prompts, SKILL.md, the full notation, and the skill zip for Claude.</span></a></li>
       <li><a href="assets/starter-kit.zip" download><b>Starter kit</b><span>Demo lesson, audio, video and AI files in one zip.</span></a></li>
+      <li><a href="assets/starter-kit-flash.zip" download><b>Flash kit</b><span>Make a lesson from your own materials in one step.</span></a></li>
       <li><a href="https://github.com/jeronimovis/lessonmark" target="_blank" rel="noopener"><b>Source code</b><span>LessonMark on GitHub. Free and open (MIT licence).</span></a></li>
     </ul>
   </section>

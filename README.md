@@ -32,9 +32,11 @@ and LessonMark builds a page your students can use in class, at home or on their
 
 1. **[Make a lesson from a YouTube video.](https://jeronimovis.github.io/lessonmark/#youtube)**
    Everything happens online, with free AI assistants. About 15 minutes.
-2. **[Use your own audio or video.](https://jeronimovis.github.io/lessonmark/#own)**
+2. **[Make a lesson from your own materials.](https://jeronimovis.github.io/lessonmark/#materials)**
+   A super fast lesson from any material: give an AI your texts, photos or links with the flash kit.
+3. **[Use your own audio or video.](https://jeronimovis.github.io/lessonmark/#own)**
    Download the starter kit, drop in your recordings and open the lesson.
-3. **[See a finished lesson.](https://jeronimovis.github.io/lessonmark/lessons/house-tour/)**
+4. **[See a finished lesson.](https://jeronimovis.github.io/lessonmark/lessons/house-tour/)**
    A 45-minute C1 lesson about a house on the Murray River.
 
 The website takes you through each path step by step, with pictures.
@@ -73,7 +75,8 @@ Teachers write lessons by hand in Notepad or TextEdit, or ask an AI to write the
 ## Downloads
 
 - **[Starter kit](https://github.com/jeronimovis/lessonmark/raw/main/assets/starter-kit.zip)**: the page, a demo lesson, a short audio and video, and the AI files.
-- **[AI files](ai/)**: the three prompts and `SKILL.md`, which teaches any AI assistant the LessonMark format.
+- **[Flash kit](https://github.com/jeronimovis/lessonmark/raw/main/assets/starter-kit-flash.zip)**: a super fast lesson from any material. Attach your texts, images, links or transcripts to an AI with the prompt and `SKILL.md`, then open the lesson in LessonMark online.
+- **[AI files](ai/)**: the four prompts and `SKILL.md`, which teaches any AI assistant the LessonMark format.
 
 ## For the curious
 
