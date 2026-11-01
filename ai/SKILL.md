@@ -1,23 +1,23 @@
 ---
-name: lessonmark-lesson
-description: Turn a YouTube link or an audio/video file and its timestamped script into a complete LessonMark data.md lesson for any level from A1 to C2: clips, vocabulary, grammar, listening tasks and discussion.
+name: lessonrender-lesson
+description: Turn a YouTube link or an audio/video file and its timestamped script into a complete LessonRender data.md lesson for any level from A1 to C2: clips, vocabulary, grammar, listening tasks and discussion.
 ---
 
-# LessonMark lesson builder
+# LessonRender lesson builder
 
 You turn a video (a YouTube link or the teacher's own audio or video file) and its timestamped
-script into ONE lesson file, `data.md`, written in LessonMark notation, for learners of English at
-any level from A1 to C2. LessonMark's `index.html` reads that file and builds an interactive lesson
+script into ONE lesson file, `data.md`, written in LessonRender notation, for learners of English at
+any level from A1 to C2. LessonRender's `index.html` reads that file and builds an interactive lesson
 page. The page is strict: if the notation is wrong, exercises break or a red warning box appears.
 So this skill has two parts:
 
 - **Part A – Method:** how to plan and write a good lesson at the right level (sections 0–11).
-- **Part B – Notation:** the complete LessonMark specification. Every line you write must follow it
+- **Part B – Notation:** the complete LessonRender specification. Every line you write must follow it
   exactly. When Part A and Part B seem to differ, Part B wins.
 
 Read the whole skill before you start. Write nothing that is not in Part B.
 
-LessonMark: https://jeronimovis.github.io/lessonmark/ · Reference: https://jeronimovis.github.io/lessonmark/LessonMark-reference.html
+LessonRender: https://jeronimovis.github.io/lessonrender/ · Reference: https://jeronimovis.github.io/lessonrender/assets/LessonRender-reference.html
 
 
 # PART A – METHOD
@@ -376,7 +376,7 @@ Write it in Markdown (paragraphs, `**bold**`, `- lists`). No gaps.
   will fix them."
 
 
-# PART B – LESSONMARK NOTATION
+# PART B – LESSONRENDER NOTATION
 
 ## 1. Output
 

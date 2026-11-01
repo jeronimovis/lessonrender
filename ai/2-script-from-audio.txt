@@ -1,4 +1,4 @@
-LESSONMARK · STEP 1 (OWN RECORDING) · GET THE SCRIPT OF YOUR AUDIO OR VIDEO FILE
+LESSONRENDER · STEP 1 (OWN RECORDING) · GET THE SCRIPT OF YOUR AUDIO OR VIDEO FILE
 
 Use this file instead of 1-script-from-youtube.txt when the lesson uses your own
 audio.mp3 or video.mp4 (for example, a recording of yourself or a podcast extract).

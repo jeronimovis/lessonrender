@@ -1,4 +1,4 @@
-LESSONMARK · STEP 3 · TURN THE SCRIPT INTO A LESSON
+LESSONRENDER · STEP 3 · TURN THE SCRIPT INTO A LESSON
 
 HOW TO USE THIS FILE
 1. Open an AI assistant. These work well, also on free accounts:
@@ -10,12 +10,12 @@ HOW TO USE THIS FILE
 4. Copy the prompt and the script and send them to the AI.
 5. The AI answers with your lesson in a box (a code block). Copy it, or download it as
    an .md file. Then:
-   - for a YouTube video: paste it or open it in https://jeronimovis.github.io/lessonmark/online/
+   - for a YouTube video: paste it or open it in https://jeronimovis.github.io/lessonrender/online/
    - for your own audio or video: save it as data.md next to index.html and your files,
      then open index.html.
 
 PROMPT:
-Follow the attached SKILL.md exactly to create a LessonMark lesson file from the script below.
+Follow the attached SKILL.md exactly to create a LessonRender lesson file from the script below.
 - The script starts with the teacher's choices, between ==== lines: the video link or file name, learners, level, class length, style, and any focus or extras. Use them for the whole lesson.
 - If a choice is missing or still in [brackets], use the defaults in SKILL.md section 0 and say so in your summary.
 - Use only the notation in SKILL.md (Part B). Check the file against its Final checklist before you answer.

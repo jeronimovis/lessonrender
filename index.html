@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LessonMark – interactive English lessons from a video</title>
+<title>LessonRender – interactive English lessons from a video</title>
 <meta name="description" content="Turn a YouTube video or your own recording into an interactive English lesson: clips, self-checking exercises and an answer key. Free, and it runs in any web browser.">
 <link rel="icon" type="image/svg+xml" href="assets/logo/dropcap-icon-classic-light.svg">
 <script>(function(){var t;try{t=localStorage.getItem('lm-site-theme')}catch(e){}document.documentElement.setAttribute('data-theme',t||'light')})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Unbounded:wght@500&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#fff;--slab:#ecebe7;--slab-deep:#cfcdc6;--ink:#1c1e21;--muted:#5c6168;--rule:#d9d7d1;--accent:#1f3fb8;--accent-soft:#e6ebfa;--ok:#17683c;--ok-soft:#e5f3ea;--field:#fff;--code:#f4f3ef;--grid:rgba(0,0,0,.035);--bar:rgba(255,255,255,.94);
   --serif:"Newsreader",Georgia,"Times New Roman",serif;--ui:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;color-scheme:light}
@@ -27,9 +27,9 @@ code{font-family:var(--mono);font-size:.82em;background:var(--code);border:1px s
 /* top bar */
 .top{position:sticky;top:0;z-index:10;background:var(--bar);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
 .top .wrap{display:flex;align-items:center;height:56px}
-.brand{display:flex;align-items:center;text-decoration:none;color:var(--ink);font-weight:700;font-size:21px;letter-spacing:-.01em;margin-right:auto}
+.brand{display:flex;align-items:center;white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:700;font-size:21px;letter-spacing:-.01em;margin-right:auto}
 .brand svg{width:30px;height:30px;margin-right:10px}
-.brand span{color:var(--accent)}
+.wm span{color:var(--accent);font:500 .56em "Unbounded",var(--ui);letter-spacing:.14em;text-transform:uppercase;margin-left:.34em}
 .top nav{display:flex;font:14px var(--ui)}
 .top nav a{color:var(--muted);text-decoration:none;padding:8px 10px}
 .top nav a:hover{color:var(--ink)}
@@ -156,9 +156,9 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
 <body>
 
 <div class="top"><div class="wrap">
-  <a class="brand" href="#" aria-label="LessonMark, back to the top">
-    <svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="14" fill="var(--slab)"/><rect x="18" y="18" width="53" height="53" rx="4" fill="var(--ink)"/><path d="M55.6 60.4H55.2L52 58.9H37.9V57H54.7L51.3 57.9L57.4 49L58.2 49.2ZM42.6 30.3V58.9H30.8V58.1L34.1 57.2V30.3L30.8 29.4V28.6H45.9V29.4Z" fill="var(--slab)"/><path d="M82.2 21.2H102M82.2 52.2H102M82.2 67.8H102M21.2 83.2H102M21.2 98.8H74" stroke="var(--ink)" stroke-width="6.5" stroke-linecap="round"/><path d="M82.2 36.8H102" stroke="var(--accent)" stroke-width="6.5" stroke-linecap="round"/></svg>
-    Lesson<span>Mark</span></a>
+  <a class="brand" href="#" aria-label="LessonRender, back to the top">
+    <svg class="lm-mark" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="14" fill="var(--slab)"/><rect x="18" y="18" width="53" height="53" rx="4" fill="var(--ink)"/><path d="M55.6 60.4H55.2L52 58.9H37.9V57H54.7L51.3 57.9L57.4 49L58.2 49.2ZM42.6 30.3V58.9H30.8V58.1L34.1 57.2V30.3L30.8 29.4V28.6H45.9V29.4Z" fill="var(--slab)"/><path d="M82.2 21.2H102M82.2 36.8H102M82.2 52.2H102M82.2 67.8H102M21.2 83.2H102M21.2 98.8H46" stroke="var(--ink)" stroke-width="6.5" stroke-linecap="round"/><rect x="53" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)"/><rect x="63" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)" opacity="0.6"/><rect x="73" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)" opacity="0.3"/></svg>
+    <span class="wm">Lesson<span>Render</span></span></a>
   <nav aria-label="Sections"><a href="#youtube">From YouTube</a><a href="#materials">Flash kit</a><a href="#own">Your own media</a><a href="#change">Change it</a><a href="#more">More</a></nav>
   <button type="button" class="tool" id="theme" aria-label="Switch between light and dark" title="Light or dark">
     <svg class="ic-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
@@ -170,7 +170,7 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
   <div>
     <p class="kicker">For English teachers</p>
     <h1>Turn a video into an interactive lesson.</h1>
-    <p class="dek">Choose a YouTube video or your own recording. A free AI writes the exercises, and LessonMark turns them into a page your students can use in class or at home.</p>
+    <p class="dek">Choose a YouTube video or your own recording. A free AI writes the exercises, and LessonRender turns them into a page your students can use in class or at home.</p>
     <p class="free">Free, and it runs in any web browser.</p>
   </div>
   <div aria-hidden="true">
@@ -225,7 +225,7 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
           <a class="file" href="ai/SKILL.md" download><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>SKILL.md</a>
         </div>
         <ul>
-          <li><b>Attach</b> <code>SKILL.md</code> to the chat (the + or paperclip button). It teaches the AI how to write a LessonMark lesson.</li>
+          <li><b>Attach</b> <code>SKILL.md</code> to the chat (the + or paperclip button). It teaches the AI how to write a LessonRender lesson.</li>
           <li><b>Paste</b> Gemini’s whole answer at the end of <code>3-make-the-lesson.txt</code>, then copy everything and send it. Your choices from step 1 come with it.</li>
         </ul>
         <p class="tip"><b>Attach SKILL.md every time.</b> It shows the AI the exact format, so your lesson opens cleanly.</p>
@@ -237,8 +237,8 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
 title: Make This Lesson Your Own
 level: B1
 …</pre></div>
-        <p>Then open LessonMark online, paste the lesson into the box (or open the downloaded file) and click <b>Show the lesson</b>.</p>
-        <p><a class="btn" href="online/">Open LessonMark online</a></p>
+        <p>Then open LessonRender online, paste the lesson into the box (or open the downloaded file) and click <b>Show the lesson</b>.</p>
+        <p><a class="btn" href="online/">Open LessonRender online</a></p>
         <figure class="shotimg"><img src="assets/pasted-lesson.png" width="630" height="717" loading="lazy" alt="The Open a lesson page: a lesson pasted into the text box, with the Show the lesson button below it"></figure>
       </div></li>
       <li class="step"><div>
@@ -257,7 +257,7 @@ level: B1
     <ol class="steps">
       <li class="step"><div>
         <h3>Download the flash kit</h3>
-        <p>A small zip with three files: the instructions for the AI, <code>SKILL.md</code>, and a link to LessonMark online. You can also download the two AI files one by one in the next step.</p>
+        <p>A small zip with three files: the instructions for the AI, <code>SKILL.md</code>, and a link to LessonRender online. You can also download the two AI files one by one in the next step.</p>
         <p><a class="btn" href="assets/starter-kit-flash.zip" download>Download the flash kit (.zip)</a></p>
       </div></li>
       <li class="step"><div>
@@ -271,8 +271,8 @@ level: B1
       </div></li>
       <li class="step"><div>
         <h3>Open your lesson</h3>
-        <p>Copy the AI’s lesson, or download it, and paste or open it in LessonMark online.</p>
-        <p><a class="btn" href="online/">Open LessonMark online</a></p>
+        <p>Copy the AI’s lesson, or download it, and paste or open it in LessonRender online.</p>
+        <p><a class="btn" href="online/">Open LessonRender online</a></p>
         <p class="tip"><b>Lessons with your own images or recordings</b> work from a folder: save the lesson as <code>data.md</code> next to <code>index.html</code> and those files, as in <a href="#own">choice 3</a>. The AI lists the file names to use.</p>
       </div></li>
     </ol>
@@ -306,7 +306,7 @@ level: B1
       <li class="step"><div>
         <h3>Share it</h3>
         <p>Send students the whole folder as a zip, or upload the folder to your website.</p>
-        <p class="tip"><b>YouTube videos play only online.</b> For YouTube lessons, use <a href="online/">LessonMark online</a> instead (choice 1).</p>
+        <p class="tip"><b>YouTube videos play only online.</b> For YouTube lessons, use <a href="online/">LessonRender online</a> instead (choice 1).</p>
       </div></li>
     </ol>
   </section>
@@ -337,7 +337,7 @@ level: B1
         <div class="ex">style: <span class="hl">notebook</span></div>
       </div>
     </div>
-    <p style="margin-top:22px"><a class="btn ghost" href="assets/LessonMark-reference.html">See every exercise type in the reference</a></p>
+    <p style="margin-top:22px"><a class="btn ghost" href="assets/LessonRender-reference.html">See every exercise type in the reference</a></p>
   </section>
 
   <!-- ===== Layer 4 ===== -->
@@ -346,19 +346,19 @@ level: B1
     <ul class="links" style="margin-top:22px">
       <li><a href="lessons/house-tour/"><b>House tour</b><span>A complete C1 lesson for architects, made from a YouTube video.</span></a></li>
       <li><a href="lessons/feature-guide/"><b>Feature guide</b><span>A lesson about Venice that shows every exercise type, with how it’s written.</span></a></li>
-      <li><a href="assets/LessonMark-reference.html"><b>Reference</b><span>Every tag and option, with examples to copy.</span></a></li>
-      <li><a href="https://github.com/jeronimovis/lessonmark/tree/main/ai" target="_blank" rel="noopener"><b>Instructions for AI</b><span>The prompts, SKILL.md, the full notation, and the skill zip for Claude.</span></a></li>
+      <li><a href="assets/LessonRender-reference.html"><b>Reference</b><span>Every tag and option, with examples to copy.</span></a></li>
+      <li><a href="https://github.com/jeronimovis/lessonrender/tree/main/ai" target="_blank" rel="noopener"><b>Instructions for AI</b><span>The prompts, SKILL.md, the full notation, and the skill zip for Claude.</span></a></li>
       <li><a href="assets/starter-kit.zip" download><b>Starter kit</b><span>Demo lesson, audio, video and AI files in one zip.</span></a></li>
       <li><a href="assets/starter-kit-flash.zip" download><b>Flash kit</b><span>Make a lesson from your own materials in one step.</span></a></li>
-      <li><a href="https://github.com/jeronimovis/lessonmark" target="_blank" rel="noopener"><b>Source code</b><span>LessonMark on GitHub. Free and open (MIT licence).</span></a></li>
+      <li><a href="https://github.com/jeronimovis/lessonrender" target="_blank" rel="noopener"><b>Source code</b><span>LessonRender on GitHub. Free and open (MIT licence).</span></a></li>
     </ul>
   </section>
 
 </main>
 
 <footer><div class="wrap">
-  <p><svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="14" fill="var(--slab)"/><rect x="18" y="18" width="53" height="53" rx="4" fill="var(--ink)"/><path d="M55.6 60.4H55.2L52 58.9H37.9V57H54.7L51.3 57.9L57.4 49L58.2 49.2ZM42.6 30.3V58.9H30.8V58.1L34.1 57.2V30.3L30.8 29.4V28.6H45.9V29.4Z" fill="var(--slab)"/><path d="M82.2 21.2H102M82.2 52.2H102M82.2 67.8H102M21.2 83.2H102M21.2 98.8H74" stroke="var(--ink)" stroke-width="6.5" stroke-linecap="round"/><path d="M82.2 36.8H102" stroke="var(--accent)" stroke-width="6.5" stroke-linecap="round"/></svg>LessonMark · made by <a href="https://jeronimov.org" target="_blank" rel="noopener">Jerónimo Visñovezky</a>, English teacher</p>
-  <p>Free and open source · <a href="https://github.com/jeronimovis/lessonmark/blob/main/LICENSE" target="_blank" rel="noopener">MIT licence</a></p>
+  <p><svg class="lm-mark" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="14" fill="var(--slab)"/><rect x="18" y="18" width="53" height="53" rx="4" fill="var(--ink)"/><path d="M55.6 60.4H55.2L52 58.9H37.9V57H54.7L51.3 57.9L57.4 49L58.2 49.2ZM42.6 30.3V58.9H30.8V58.1L34.1 57.2V30.3L30.8 29.4V28.6H45.9V29.4Z" fill="var(--slab)"/><path d="M82.2 21.2H102M82.2 36.8H102M82.2 52.2H102M82.2 67.8H102M21.2 83.2H102M21.2 98.8H46" stroke="var(--ink)" stroke-width="6.5" stroke-linecap="round"/><rect x="53" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)"/><rect x="63" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)" opacity="0.6"/><rect x="73" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)" opacity="0.3"/></svg>LessonRender · made by <a href="https://jeronimov.org" target="_blank" rel="noopener">Jerónimo Visñovezky</a>, English teacher</p>
+  <p>Free and open source · <a href="https://github.com/jeronimovis/lessonrender/blob/main/LICENSE" target="_blank" rel="noopener">MIT licence</a></p>
 </div></footer>
 
 <script>
