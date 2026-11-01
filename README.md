@@ -7,10 +7,10 @@
   </a>
 </p>
 
-<h3 align="center">Turn a video into an interactive English lesson.</h3>
+<h3 align="center">Turn anything into an interactive English lesson.</h3>
 
 <p align="center">
-Pick a YouTube video or your own recording. A free AI writes the exercises,<br>
+Choose your own text or a YouTube video script. A free AI writes the exercises,<br>
 and LessonRender builds a page your students can use in class, at home or on their phones.
 </p>
 
@@ -30,10 +30,10 @@ and LessonRender builds a page your students can use in class, at home or on the
 
 ## Start here
 
-1. **[Make a lesson from a YouTube video.](https://jeronimovis.github.io/lessonrender/#youtube)**
-   Everything happens online, with free AI assistants. About 15 minutes.
-2. **[Make a lesson from your own materials.](https://jeronimovis.github.io/lessonrender/#materials)**
+1. **[Make a lesson from your own materials.](https://jeronimovis.github.io/lessonrender/#materials)**
    A super fast lesson from any material: give an AI your texts, photos or links with the flash kit.
+2. **[Make a lesson from a YouTube video.](https://jeronimovis.github.io/lessonrender/#youtube)**
+   Everything happens online, with free AI assistants. About 15 minutes.
 3. **[Use your own audio or video.](https://jeronimovis.github.io/lessonrender/#own)**
    Download the starter kit, drop in your recordings and open the lesson.
 4. **[See a finished lesson.](https://jeronimovis.github.io/lessonrender/lessons/house-tour/)**
@@ -74,8 +74,8 @@ Teachers write lessons by hand in Notepad or TextEdit, or ask an AI to write the
 
 ## Downloads
 
-- **[Starter kit](https://github.com/jeronimovis/lessonrender/raw/main/assets/starter-kit.zip)**: the page, a demo lesson, a short audio and video, and the AI files.
 - **[Flash kit](https://github.com/jeronimovis/lessonrender/raw/main/assets/starter-kit-flash.zip)**: a super fast lesson from any material. Attach your texts, images, links or transcripts to an AI with the prompt and `SKILL.md`, then open the lesson in LessonRender online.
+- **[Starter kit](https://github.com/jeronimovis/lessonrender/raw/main/assets/starter-kit.zip)**: the page, a demo lesson, a short audio and video, and the AI files.
 - **[AI files](ai/)**: the four prompts and `SKILL.md`, which teaches any AI assistant the LessonRender format.
 
 ## For the curious
