@@ -1,8 +1,8 @@
-LESSONMARK · ONE STEP · MAKE A LESSON FROM YOUR OWN MATERIALS
+LESSONRENDER · ONE STEP · MAKE A LESSON FROM YOUR OWN MATERIALS
 
 Use this file when you already have the material for a class: an article, your notes, a story,
 a song you have the rights to, photos, a worksheet, links, a transcript, anything.
-It turns all of it into one LessonMark lesson.
+It turns all of it into one LessonRender lesson.
 
 HOW TO USE THIS FILE
 1. Open an AI assistant. These work well, also on free accounts:
@@ -12,7 +12,7 @@ HOW TO USE THIS FILE
 3. Fill in the TEACHER'S CHOICES below (replace the text in [brackets]).
 4. Copy the prompt and send it to the AI.
 5. The AI answers with your lesson in a box (a code block). Copy it, or download it and paste it or open it in
-     https://jeronimovis.github.io/lessonmark/online/
+     https://jeronimovis.github.io/lessonrender/online/
 
 Good to know
 - Videos: most AI assistants read the words of a video only from a transcript. Paste a
@@ -32,7 +32,7 @@ FOCUS AND EXTRAS (optional): [e.g. more speaking, a role play, a reading text, h
 FILE NAMES (optional): [the names your images, audio or video will have in the lesson folder, e.g. photo1.jpg, interview.mp3]
 ===========================
 
-Follow the attached SKILL.md exactly to create ONE LessonMark lesson file for the learners above, built from everything I attached or pasted below.
+Follow the attached SKILL.md exactly to create ONE LessonRender lesson file for the learners above, built from everything I attached or pasted below.
 
 1. Read all my materials first.
    - Work out the topic, the most useful content and the language worth teaching at this level.
@@ -40,7 +40,7 @@ Follow the attached SKILL.md exactly to create ONE LessonMark lesson file for th
    - If the materials are too long, choose the best parts for the class length. If they are too short, add tasks that use them more deeply, and speaking.
    - If a material is unreadable or you cannot open it, leave it out and say so in the summary.
 
-2. Turn each kind of material into the right LessonMark blocks (SKILL.md Part B):
+2. Turn each kind of material into the right LessonRender blocks (SKILL.md Part B):
    - Text (articles, notes, stories, worksheets): a [read] block. Keep the teacher's words; if a text is long, use an extract of the right length for the level (SKILL.md section 2.2) and write its source after " | " on the [read] line. Base gap fills, [tf], [m], [short], [order] and [long] items on it.
    - Images: an [img] line with a short caption, used for a lead-in, description, prediction or discussion. Use the names in FILE NAMES, in the order I attached the images; if none are given, call them image01.png, image02.png… in that order. Base no answer on a detail you are unsure you can see.
    - YouTube links or video and audio files WITH a timed transcript: [play] lines with clips and times taken only from the transcript, and listening tasks as in SKILL.md sections 3–7.
