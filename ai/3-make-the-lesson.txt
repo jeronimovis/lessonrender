@@ -2,17 +2,11 @@ LESSONRENDER · STEP 3 · TURN THE SCRIPT INTO A LESSON
 
 HOW TO USE THIS FILE
 1. Open an AI assistant. These work well, also on free accounts:
-   DeepSeek (chat.deepseek.com), Claude (claude.ai), ChatGPT (chatgpt.com).
+   DeepSeek (chat.deepseek.com), Gemini (gemini.google.com), Claude (claude.ai), ChatGPT (chatgpt.com).
 2. Attach the file SKILL.md from this folder (the + or paperclip button).
 3. Paste Gemini's whole answer from step 1 at the end of the prompt, where it says SCRIPT.
-   It starts with your choices, so there is nothing to fill in here.
-   To change a choice (a different level or style, say), edit it there before you send.
 4. Copy the prompt and the script and send them to the AI.
-5. The AI answers with your lesson in a box (a code block). Copy it, or download it as
-   an .md file. Then:
-   - for a YouTube video: paste it or open it in https://jeronimovis.github.io/lessonrender/online/
-   - for your own audio or video: save it as data.md next to index.html and your files,
-     then open index.html.
+5. The AI answers with your lesson in a box (a code block). Copy it, or download it as an .md file. Then open index.html.
 
 PROMPT:
 Follow the attached SKILL.md exactly to create a LessonRender lesson file from the script below.

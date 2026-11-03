@@ -1,12 +1,11 @@
 LESSONRENDER · ONE STEP · MAKE A LESSON FROM YOUR OWN MATERIALS
 
-Use this file when you already have the material for a class: an article, your notes, a story,
-a song you have the rights to, photos, a worksheet, links, a transcript, anything.
+Use this file when you already have the material for a class: an article, your notes, a story, a song you have the rights to, photos, a worksheet, links, a transcript, anything.
 It turns all of it into one LessonRender lesson.
 
 HOW TO USE THIS FILE
 1. Open an AI assistant. These work well, also on free accounts:
-   DeepSeek (chat.deepseek.com), Claude (claude.ai), ChatGPT (chatgpt.com), Gemini (gemini.google.com).
+   DeepSeek (chat.deepseek.com), Gemini (gemini.google.com), Claude (claude.ai), ChatGPT (chatgpt.com), Gemini (gemini.google.com).
 2. Attach SKILL.md plus your materials (the + or paperclip button).
    Text can also be pasted at the end of the prompt, under MATERIALS.
 3. Fill in the TEACHER'S CHOICES below (replace the text in [brackets]).

@@ -7,7 +7,6 @@ HOW TO USE THIS FILE
 1. Open Gemini (gemini.google.com). A free account is enough.
 2. Attach your audio or video file (the + or paperclip button).
 3. Fill in the TEACHER'S CHOICES below, copy the prompt and paste it into Gemini.
-   You answer them only here: they travel with the script to step 3.
 4. Check that the answer starts with your choices, and that every line of the transcript
    starts with times like [00:05–00:15].
 5. Copy Gemini's whole answer. You will paste it in step 3 (3-make-the-lesson.txt).

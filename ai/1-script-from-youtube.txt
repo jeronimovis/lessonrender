@@ -3,7 +3,6 @@ LESSONRENDER · STEP 1 · GET THE SCRIPT OF A YOUTUBE VIDEO
 HOW TO USE THIS FILE
 1. Open Gemini (gemini.google.com). A free account is enough.
 2. Fill in YOUR CHOICES below (replace the text in [brackets]).
-   This is the only place you answer them: they travel with the script to step 3.
 3. Copy everything in this file and paste it into Gemini.
 4. Check the answer. It should start with your choices, and every line of the transcript
    should start with times like [01:26–01:40].
@@ -11,6 +10,7 @@ HOW TO USE THIS FILE
 5. Copy Gemini's whole answer, from the first line to the last.
    You will paste it into 3-make-the-lesson.txt.
 
+PROMPT
 ==== TEACHER'S CHOICES ====
 VIDEO LINK: [paste the YouTube link]
 LEARNERS: [e.g. adults at work, university students, architects]
