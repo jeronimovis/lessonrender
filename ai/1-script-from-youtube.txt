@@ -32,7 +32,7 @@ Start your answer with the TEACHER'S CHOICES block above, copied exactly as I wr
 - The speakers' accents.
 
 2. WORD-FOR-WORD TRANSCRIPT WITH TIMES
-- The full transcript, word for word, in blocks of about 10 to 20 seconds.
+- The full transcript, word for word, in blocks of about 5 to 10 seconds.
 - Start each block with its start and end time: [mm:ss–mm:ss].
 - Start each turn with the speaker's name or role and a colon, e.g. "Rob Mills: …".
 - Mark anything unclear as [UNCERTAIN], and music or noise as [Music] or [Noise].
