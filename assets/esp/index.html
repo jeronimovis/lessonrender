@@ -147,6 +147,9 @@ section{padding-block:4rem;border-top:1px solid var(--rule)}
 .route h3{font-size:1.6rem}
 @media (max-width:820px){.route{grid-template-columns:1fr;gap:2rem}}
 
+.video.flash{margin-bottom:4rem;align-items:center}
+.flash-title{font-size:1.6rem;line-height:1.2}
+
 /* para quién */
 .people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem 2.5rem}
 @media (max-width:620px){.people{grid-template-columns:1fr}}
@@ -330,12 +333,20 @@ footer{border-top:1px solid var(--ink);padding-block:2.5rem 3rem;display:grid;ga
       <div class="sec-head col">
         <div class="kicker">Empezar</div>
         <h2>Tu primera lección, a partir de un texto</h2>
-        <p>La forma más rápida es el flash kit: le das a una IA tu material (un artículo, tus notas, fotos, links o una transcripción) y arma toda la lección en un solo paso.</p>
+        <p>La forma más rápida es el flash kit: le das a una IA tu material (un artículo, tus notas, o una transcripción) y arma toda la lección en un solo paso.</p>
       </div>
-      <a class="video-card" href="https://www.youtube.com/watch?v=OF-SJWonH-o" target="_blank" rel="noopener">
-        <span class="vc-play" aria-hidden="true"><svg width="22" height="26" viewBox="0 0 30 34"><path d="M0 0L30 17L0 34Z"/></svg></span>
-        <span class="vc-text"><span class="kicker">Video · paso a paso</span><b>Cómo crear una lección con el flash kit a partir de cualquier texto</b><span class="vc-sub">Ver en YouTube</span></span>
-      </a>
+      <div class="video flash">
+        <a class="player" href="https://www.youtube.com/watch?v=OF-SJWonH-o" target="_blank" rel="noopener" aria-label="Ver en YouTube el paso a paso del flash kit">
+          <img src="images/video-flash-kit.png" alt="Miniatura del video: Tu lección lista en 5 minutos. Prompt + IA, lección completa" width="1280" height="720" loading="lazy">
+          <span class="play"><span><svg width="30" height="34" viewBox="0 0 30 34" aria-hidden="true"><path d="M0 0L30 17L0 34Z"/></svg></span></span>
+        </a>
+        <div class="prose">
+          <div class="kicker">Video · paso a paso</div>
+          <h3 class="flash-title">Cómo crear una lección con el flash kit a partir de cualquier texto</h3>
+          <p>Del material a la lección completa, con el prompt del kit y la IA que prefieras.</p>
+          <p><a href="https://www.youtube.com/watch?v=OF-SJWonH-o" target="_blank" rel="noopener">Ver en YouTube</a></p>
+        </div>
+      </div>
       <div class="steps">
         <div class="step">
           <div class="n">1</div>
