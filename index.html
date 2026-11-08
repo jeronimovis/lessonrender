@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LessonRender – interactive English lessons from a video</title>
-<meta name="description" content="Turn a YouTube video or your own recording into an interactive English lesson: clips, self-checking exercises and an answer key. Free, and it runs in any web browser.">
+<title>LessonRender – interactive English lessons from any text or video</title>
+<meta name="description" content="Turn any text, YouTube video or recording into an interactive English lesson: clips, self-checking exercises and an answer key. A free AI writes it. Free, and it runs in any web browser.">
 <link rel="icon" type="image/svg+xml" href="assets/logo/dropcap-icon-classic-light.svg">
 <script>(function(){var t;try{t=localStorage.getItem('lm-site-theme')}catch(e){}document.documentElement.setAttribute('data-theme',t||'light')})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,6 +72,40 @@ h1{font-size:clamp(40px,6.4vw,74px);line-height:.98;letter-spacing:-.025em;margi
 .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video-cap{font:14px var(--ui);color:var(--muted);text-align:center;margin:12px 0 0}
 .listen{display:block;width:100%;max-width:520px;margin:-12px 0 34px}
+
+/* before and after */
+.howto{margin:56px 0 0}
+.howto h3{font-size:clamp(24px,3vw,32px);margin:0 0 6px}
+.howto .lead{margin-bottom:24px}
+.pair{display:grid;grid-template-columns:minmax(0,.85fr) auto minmax(0,1fr);grid-gap:20px;align-items:center}
+.pair figure{margin:0;min-width:0}
+.pair img{display:block;width:100%;height:auto;border:1px solid var(--slab-deep);border-radius:6px;box-shadow:0 12px 28px -16px rgba(0,0,0,.35)}
+.pair figcaption{font:13px var(--ui);color:var(--muted);margin-top:10px}
+.pair figcaption b{color:var(--ink)}
+.pair .arrow{font-size:46px;line-height:1;color:var(--accent)}
+@media (max-width:720px){.pair{grid-template-columns:1fr}.pair .arrow{transform:rotate(90deg);justify-self:center}}
+.two{display:grid;grid-template-columns:1fr 1fr;grid-gap:24px;margin:30px 0 0}
+.two div{border-top:3px solid var(--ink);padding-top:12px;font:15px/1.55 var(--ui);color:var(--muted)}
+.two div.data{border-color:var(--accent)}
+.two b{display:block;font:600 16px var(--mono);color:var(--ink);margin-bottom:4px}
+@media (max-width:620px){.two{grid-template-columns:1fr}}
+
+/* where it opens */
+.tablewrap{overflow-x:auto}
+.matrix{width:100%;min-width:560px;border-collapse:collapse;font:15px var(--ui)}
+.matrix th,.matrix td{padding:12px 10px;border-bottom:1px solid var(--rule);text-align:center}
+.matrix th{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink)}
+.matrix th:first-child,.matrix td:first-child{text-align:left}
+.matrix td:first-child{font:17px var(--serif);color:var(--ink)}
+.matrix .y{color:var(--ok);font-weight:700;font-size:18px}
+.matrix .n{color:var(--muted);font-weight:700;font-size:18px;opacity:.6}
+.notes{max-width:720px;margin-top:22px}
+
+/* example */
+.example{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);grid-gap:36px;align-items:center;margin:26px 0 34px}
+.example .shotimg{max-width:none;margin:0}
+.example .kicker{margin-bottom:8px}
+@media (max-width:760px){.example{grid-template-columns:1fr;grid-gap:20px}}
 
 /* choices */
 .choices{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:16px;margin:40px 0 0;position:relative}
@@ -166,7 +200,7 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
   <a class="brand" href="#" aria-label="LessonRender, back to the top">
     <svg class="lm-mark" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="14" fill="var(--slab)"/><rect x="18" y="18" width="53" height="53" rx="4" fill="var(--ink)"/><path d="M55.6 60.4H55.2L52 58.9H37.9V57H54.7L51.3 57.9L57.4 49L58.2 49.2ZM42.6 30.3V58.9H30.8V58.1L34.1 57.2V30.3L30.8 29.4V28.6H45.9V29.4Z" fill="var(--slab)"/><path d="M82.2 21.2H102M82.2 36.8H102M82.2 52.2H102M82.2 67.8H102M21.2 83.2H102M21.2 98.8H46" stroke="var(--ink)" stroke-width="6.5" stroke-linecap="round"/><rect x="53" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)"/><rect x="63" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)" opacity="0.6"/><rect x="73" y="95.55" width="6.5" height="6.5" rx="1" fill="var(--accent)" opacity="0.3"/></svg>
     <span class="wm">Lesson<span>Render</span></span></a>
-  <nav aria-label="Sections"><a href="#materials">Flash kit</a><a href="#youtube">From YouTube</a><a href="#own">Your own media</a><a href="#change">Change it</a><a href="#more">More</a></nav>
+  <nav aria-label="Sections"><a href="#materials">Flash kit</a><a href="#youtube">From YouTube</a><a href="#own">Your own media</a><a href="#where">Where it opens</a><a href="#change">Change it</a><a href="#more">More</a></nav>
   <button type="button" class="tool" id="theme" aria-label="Switch between light and dark" title="Light or dark">
     <svg class="ic-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
     <svg class="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -202,6 +236,21 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
   </figure>
   <p class="video-cap">LessonRender in about a minute.</p>
 
+  <div class="howto">
+    <p class="kicker">How it works</p>
+    <h3>Two files: one for the design, one for the lesson.</h3>
+    <p class="lead">The AI writes the lesson as plain text. LessonRender turns it into the page your students use.</p>
+    <div class="pair">
+      <figure><img src="assets/before-data-md.png" width="809" height="705" loading="lazy" alt="A lesson file in plain text: true or false sentences marked with [tf], [t] and [f]"><figcaption><b>data.md</b> · what the AI writes</figcaption></figure>
+      <div class="arrow" aria-hidden="true">→</div>
+      <figure><img src="assets/after-lesson.png" width="869" height="832" loading="lazy" alt="The same lesson in LessonRender: a YouTube clip and true or false questions"><figcaption><b>index.html</b> · what your students see</figcaption></figure>
+    </div>
+    <div class="two">
+      <div><b>index.html</b>The design. You download it once: 110 KB, six looks in light and dark, and it works offline.</div>
+      <div class="data"><b>data.md</b>The lesson. Plain text with a simple mark for each exercise, so any AI can write it in a minute, even a free one.</div>
+    </div>
+  </div>
+
   <nav class="choices" aria-label="Start here">
     <a class="choice" href="#materials"><span class="num">1</span><b>Make a lesson from your own materials.</b><span class="d">A super fast lesson from any material. Give an AI your texts, photos or links with the flash kit.</span><span class="go">Show me the steps ↓</span></a>
     <a class="choice" href="#youtube"><span class="num">2</span><b>Make a lesson from a YouTube video.</b><span class="d">Everything happens online. Free AI assistants write the exercises; you check them and teach.</span><span class="go">Show me the steps ↓</span></a>
@@ -234,6 +283,7 @@ footer svg{width:20px;height:20px;vertical-align:-5px;margin-right:8px}
           <a class="file" href="ai/4-lesson-from-your-materials.txt" download><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>4-lesson-from-your-materials.txt</a>
           <a class="file" href="ai/SKILL.md" download><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>SKILL.md</a>
         </div>
+        <p class="tip"><b>Free and reliable:</b> DeepSeek with <b>DeepThink</b> turned on writes clean lessons.</p>
         <p class="tip"><b>Using a video?</b> Paste a transcript with times, and the lesson plays exact clips. <a href="#youtube">Choice 2, step 1</a> shows how to get one.</p>
       </div></li>
       <li class="step"><div>
@@ -328,6 +378,27 @@ level: B1
     </ol>
   </section>
 
+  <!-- ===== Where it opens ===== -->
+  <section id="where">
+    <h2><small>Before you share</small>Where each lesson opens.</h2>
+    <p class="lead">Browsers limit what a page can load, so each way of opening a lesson can play different things.</p>
+    <div class="tablewrap">
+      <table class="matrix">
+        <thead><tr><th>The lesson has</th><th>On your computer</th><th>LessonRender online</th><th>Your own website</th></tr></thead>
+        <tbody>
+          <tr><td>Text and exercises only</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Your own images, audio or video</td><td class="y">✓</td><td class="n">✗</td><td class="y">✓</td></tr>
+          <tr><td>YouTube clips</td><td class="n">✗</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Your recordings and YouTube together</td><td class="n">✗</td><td class="n">✗</td><td class="y">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notes">
+      <p class="tip"><b>On your computer,</b> double-click <code>index.html</code>. The first time, Chrome and Edge ask you to choose the lesson’s folder; after that it opens by itself. In other browsers, choose <code>data.md</code>.</p>
+      <p>LessonRender has no logins and keeps no scores. It is a single page that opens in any browser and runs on cheap or free hosting, such as GitHub Pages.</p>
+    </div>
+  </section>
+
   <!-- ===== Layer 3 ===== -->
   <section id="change">
     <h2><small>Going further</small>Change anything, by hand.</h2>
@@ -360,7 +431,16 @@ level: B1
   <!-- ===== Layer 4 ===== -->
   <section id="more">
     <h2><small>More</small>Examples, files and details.</h2>
-    <ul class="links" style="margin-top:22px">
+    <div class="example">
+      <figure class="shotimg"><img src="assets/rust-lesson.png" width="876" height="923" loading="lazy" alt="A LessonRender lesson in the concrete style: What Rust fans like about the game"></figure>
+      <div>
+        <p class="kicker">From any text · A1</p>
+        <h3>Grammar through a video game</h3>
+        <p>An A1 student switched off whenever grammar came up. He plays Rust, so I asked an AI for a 300-word text about the game in the present simple and present continuous, and made the lesson from it.</p>
+        <p>He laughed through half the class. In a grammar class.</p>
+      </div>
+    </div>
+    <ul class="links">
       <li><a href="lessons/house-tour/"><b>House tour</b><span>A complete C1 lesson for architects, made from a YouTube video.</span></a></li>
       <li><a href="lessons/feature-guide/"><b>Feature guide</b><span>A lesson about Venice that shows every exercise type, with how it’s written.</span></a></li>
       <li><a href="assets/LessonRender-reference.html"><b>Reference</b><span>Every tag and option, with examples to copy.</span></a></li>
