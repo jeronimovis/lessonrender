@@ -10,7 +10,7 @@
 <h3 align="center">Turn anything into an interactive English lesson.</h3>
 
 <p align="center">
-Choose your own text or a YouTube video script. A free AI writes the exercises,<br>
+Choose your own text or a YouTube video script. A free AI such as DeepSeek writes the exercises,<br>
 and LessonRender builds a page your students can use in class, at home or on their phones.
 </p>
 
@@ -53,6 +53,19 @@ And for you: teacher's notes, folded away at the bottom of the page.
 
 ## A lesson is a text file
 
+LessonRender keeps the design and the lesson in two files. `index.html` is the design: you download it once. `data.md` is the lesson: plain text with a simple mark for each exercise, so any AI can write it in a minute, even a free one.
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/before-data-md.png" alt="A lesson file in plain text: true or false sentences marked with [tf], [t] and [f]"></td>
+    <td width="50%"><img src="assets/after-lesson.png" alt="The same lesson in LessonRender: a YouTube clip and true or false questions"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>data.md</b> · what the AI writes</td>
+    <td align="center"><b>index.html</b> · what your students see</td>
+  </tr>
+</table>
+
 This is part of the starter kit's demo lesson. Change a word, save, reload, and the page changes with it.
 
 ```
@@ -65,12 +78,30 @@ This is part of the starter kit's demo lesson. Change a word, save, reload, and 
 [tf] YouTube videos play well when you open the lesson from your computer. [f]
 ```
 
-Teachers write lessons by hand in Notepad or TextEdit, or ask an AI to write them with the prompts in [`ai/`](ai/).
+Teachers write lessons by hand in Notepad or TextEdit, or ask an AI to write them with the prompts in [`ai/`](ai/). DeepSeek with DeepThink turned on is free and writes clean lessons.
+
+## Where a lesson opens
+
+Browsers limit what a page can load, so each way of opening a lesson can play different things.
+
+| The lesson has | On your computer | [LessonRender online](https://jeronimovis.github.io/lessonrender/online/) | Your own website |
+|---|:---:|:---:|:---:|
+| Text and exercises only | ✓ | ✓ | ✓ |
+| Your own images, audio or video | ✓ | ✗ | ✓ |
+| YouTube clips | ✗ | ✓ | ✓ |
+| Your recordings and YouTube together | ✗ | ✗ | ✓ |
+
+On your computer, double-click `index.html`. The first time, Chrome and Edge ask you to choose the lesson's folder; after that it opens by itself. In other browsers, choose `data.md`.
+
+LessonRender has no logins and keeps no scores. It is a single page that opens in any browser and runs on cheap or free hosting, such as GitHub Pages.
 
 ## Examples
 
 - **[House tour](https://jeronimovis.github.io/lessonrender/lessons/house-tour/)**: a complete C1 lesson for architects, made from a YouTube house tour.
 - **[Feature guide](https://jeronimovis.github.io/lessonrender/lessons/feature-guide/)**: a lesson about the engineering of Venice that shows every activity, with how each one is written.
+- **Grammar through a video game**: an A1 student switched off whenever grammar came up. He plays Rust, so an AI wrote a 300-word text about the game in the present simple and present continuous, and the lesson was made from it. He laughed through half the class.
+
+<p align="center"><img src="assets/rust-lesson.png" alt="A LessonRender lesson in the concrete style: What Rust fans like about the game" width="420"></p>
 
 ## Downloads
 
@@ -82,7 +113,7 @@ Teachers write lessons by hand in Notepad or TextEdit, or ask an AI to write the
 
 - **[Reference](https://jeronimovis.github.io/lessonrender/assets/LessonRender-reference.html)**: every tag and option, with examples to copy.
 - **[Specification](assets/LessonRender-spec.md)**: the complete notation, written for AI assistants.
-- **How it works**: one HTML file reads the lesson text and builds the page inside the browser. It works on any static host, or straight from a folder on your computer. The only outside resources are Google Fonts and, for YouTube clips, the YouTube player.
+- **How it works**: one HTML file reads the lesson text and builds the page inside the browser. It works on any static host, or straight from a folder on your computer (see [Where a lesson opens](#where-a-lesson-opens)). The only outside resources are Google Fonts and, for YouTube clips, the YouTube player.
 
 ```
 lessonrender/
